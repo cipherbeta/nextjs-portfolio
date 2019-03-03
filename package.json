@@ -1,0 +1,31 @@
+{
+    "name": "next-js-portfolio",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.15",
+        "@fortawesome/free-brands-svg-icons": "^5.7.2",
+        "@fortawesome/react-fontawesome": "^0.1.4",
+        "@zeit/next-sass": "^1.0.1",
+        "contentful": "^7.3.0",
+        "next": "^8.0.3",
+        "next-page-transitions": "^1.0.0-alpha.6",
+        "node-sass": "^4.11.0",
+        "normalize.css": "^8.0.1",
+        "nprogress": "^0.2.0",
+        "react": "^16.8.3",
+        "react-dom": "^16.8.3"
+    },
+    "devDependencies": {
+        "concurrently": "^4.1.0"
+    }
+}
