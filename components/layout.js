@@ -2,13 +2,14 @@ import React from 'react';
 import Head from 'next/head';
 import '../styles/main.scss';
 import Header from './common/Header';
-import RecentPostsSidebar from './common/RecentPosts';
-import { PageTransition } from 'next-page-transitions';
 
 // Font Awesome Imports
 import {library} from '@fortawesome/fontawesome-svg-core';
-import {faTwitter, faLinkedin, faCodepen, faGithub, faGitlab} from '@fortawesome/free-brands-svg-icons';
-library.add(faTwitter, faLinkedin, faCodepen, faGithub, faGitlab);
+import {faTwitter, faLinkedin, faCodepen, faGithub, faGitlab, 
+    faHtml5, faCss3, faJs, faReact, faSoundcloud, faYoutube} from '@fortawesome/free-brands-svg-icons';
+
+
+library.add(faTwitter, faLinkedin, faCodepen, faGithub, faGitlab, faHtml5, faCss3, faJs, faReact, faSoundcloud, faYoutube);
 
 const Layout = props => (
     <>
@@ -20,7 +21,6 @@ const Layout = props => (
             {props.children}
             <h1>Footer</h1>
         </div>
-        <RecentPostsSidebar/>
         
     </>
 )

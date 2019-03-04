@@ -1,5 +1,6 @@
 import Layout from '../components/layout';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Home extends React.Component { 
     state = {
@@ -10,29 +11,30 @@ class Home extends React.Component {
         return(
             <>
                 <div className="introduction">
-                    <div className="introduction--picture">
-                    
-                    </div>
                     <div className="introduction--stinger">
                     <small>Well hello there.</small>
-                    <h1>My name is Isa.</h1>
+                    <h1>My name is <span className="accent">Isa</span>.</h1>
                     <p>I'm a front end developer and creative currently living in Green Bay, WI.<br/>
                     I build websites and enjoy creating digital content (videos/music) as a hobby.<br/>
                     This is my little corner of the internet. Feel free to check out what I'm up to.</p>
-                    <Link href="/blog"><button>Blog</button></Link>
-                    <Link href="/contact"><button>Contact</button></Link>
+                    <span style={{display: 'inline-flex'}}>
+                    <Link prefetch href="/about"><button>Learn a bit about me</button></Link>
+                    <Link prefetch href="/projects"><button>Check out what I'm working on</button></Link>
+                    </span>
+                    
                     </div>
                 </div>
                 <div className="bigthree">
                     <div className="bigthree--section">
-                    <h1>Front End Web Development</h1>
+                    <FontAwesomeIcon icon={['fab', 'js']} size="6x" color="#f7df1e"/>
+                    <h1>Front End Webdev</h1>
                     <p>
-                        I'm a self-taught front end web developer. I'm comfortable with front end work
-                        in general, including common tooling. Semantic HTML5, CSS3/SCSS, ES6+ JS for my core with
+                        I'm a self-taught front end web developer. Semantic HTML5, CSS3/SCSS, ES6+ JS for my core with
                         a focus on ReactJS development. Looking to learn fullstack dev soon!
                     </p>
                     </div>
                     <div className="bigthree--section">
+                    <FontAwesomeIcon icon={['fab', 'soundcloud']} size="6x" color="#ff8800"/>
                     <h1>Music Production</h1>
                     <p>
                         On a whim a few years back, I picked up FL Studio during a sale. That was a mistake.
@@ -41,6 +43,7 @@ class Home extends React.Component {
                     </p>
                     </div>
                     <div className="bigthree--section">
+                    <FontAwesomeIcon icon={['fab', 'youtube']} size="6x" color="#ff0000"/>
                     <h1>Video Production</h1>
                     <p>
                         I have a good amount of experience editing and assembling videos in Premiere Pro, as well

@@ -26,8 +26,12 @@ class Header extends Component {
             <nav className="topbar">
                 <span>
                 <Link prefetch href="/"><a>Home</a></Link>
+                <Link prefetch href="/about"><a>About</a></Link>
                 <Link prefetch href="/blog"><a>Blog</a></Link>
                 <Link prefetch href="/projects"><a>Projects</a></Link>
+                </span>
+                <span className="wtexture">
+                    drop.me.a.message ^-^ >>>
                 </span>
                 <span>
                 <Link prefetch href="/contact"><a className="right">Contact</a></Link>
@@ -41,7 +45,11 @@ class Header extends Component {
                         </div>
                     </Link>
                     {/* <Sandwich toggle={this.handleMenuToggle} active={this.state.offCanvasMenuOpen}/> */}
+                    <span className="header--wtexture">
+                        isaac_doud.front.end.webdev
+                    </span>
                 </div>
+                
                 <div className="header--bottom">
                     <a href="#">
                         <FontAwesomeIcon icon={['fab', 'twitter']}/>

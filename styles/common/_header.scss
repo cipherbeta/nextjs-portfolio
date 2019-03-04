@@ -1,8 +1,48 @@
+// Make sure parent is set to relative positioning.
+%bracketeer {
+    &::after, &::before {
+        display: inline-block;
+        opacity: 0;
+        -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+        -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+        transition: transform 0.3s, opacity 0.2s;
+    }
+    &::before {
+        margin-right: 4px;
+        content: '[';
+        color: $accent;
+        -webkit-transform: translateX(20px);
+        -moz-transform: translateX(20px);
+        transform: translateX(20px);
+    }
+    &::after {
+        margin-left: 4px;
+        content: ']';
+        color: $accent;
+        -webkit-transform: translateX(-20px);
+        -moz-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+    &:focus::after, &:focus::before, &:hover::after, &:hover::before {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+%flavortext {
+    text-transform: uppercase;
+    letter-spacing: .35em;
+    opacity: .1;
+    user-select: none;
+}
+
 .topbar {
     position: fixed;
     left: 4em;
     top: 0;
-    right: 16em;
+    right: 0;
     height: 4em;
     display: flex;
     flex-direction: row;
@@ -12,6 +52,9 @@
     box-sizing: border-box;
     background: $black;
     z-index: 9999;
+    .wtexture {
+        @extend %flavortext;
+    }
     a {
         font-size: 1.25em;
         letter-spacing: .05em;
@@ -25,35 +68,7 @@
         &:focus {
             outline: none;
         }
-        &::after, &::before {
-            display: inline-block;
-            opacity: 0;
-            -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-            -moz-transition: -moz-transform 0.3s, opacity 0.2s;
-            transition: transform 0.3s, opacity 0.2s;
-        }
-        &::before {
-            margin-right: 4px;
-            content: '[';
-            color: white;
-            -webkit-transform: translateX(20px);
-            -moz-transform: translateX(20px);
-            transform: translateX(20px);
-        }
-        &::after {
-            margin-left: 4px;
-            content: ']';
-            color: white;
-            -webkit-transform: translateX(-20px);
-            -moz-transform: translateX(-20px);
-            transform: translateX(-20px);
-        }
-        &:focus::after, &:focus::before, &:hover::after, &:hover::before {
-            opacity: 1;
-            -webkit-transform: translateX(0px);
-            -moz-transform: translateX(0px);
-            transform: translateX(0px);
-        }
+        @extend %bracketeer;
     }
 }
 
@@ -71,6 +86,16 @@
     align-items: center;
     text-align: center;
     z-index: 9999;
+    &--wtexture {
+        @extend %flavortext;
+        font-size: 1em;
+        margin-top: 2em;
+        margin-left: .5em;
+        position: absolute;
+        transform: rotate(90deg);
+        transform-origin: top left;
+        word-wrap: none;
+    }
     &--bottom {
         margin-bottom: .5em;
         display:flex;
@@ -83,10 +108,11 @@
             color: white;
             opacity: .5;
             transition: .1s ease-out all;
+            position: relative;
             &:hover {
                 opacity: 1;
-                color: $accent;
             }
+            @extend %bracketeer;
         }
     }
 }
