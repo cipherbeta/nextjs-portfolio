@@ -1,0 +1,47 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi private-next-pages/_app.js": 0,
+      "multi private-next-pages/_document.js": 1,
+      "multi private-next-pages/about.js": 2,
+      "multi private-next-pages/blog.js": 3,
+      "multi private-next-pages/contact.js": 4,
+      "multi private-next-pages/index.js": 5,
+      "multi private-next-pages/projects.js": 6,
+      "multi next/dist/pages/_error": 7
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static/mTt~ZbIv82ZgJ6aCttkN7/pages/_app.js": 0,
+      "static/mTt~ZbIv82ZgJ6aCttkN7/pages/_document.js": 1,
+      "static/mTt~ZbIv82ZgJ6aCttkN7/pages/_error.js": 2,
+      "static/mTt~ZbIv82ZgJ6aCttkN7/pages/about.js": 3,
+      "static/mTt~ZbIv82ZgJ6aCttkN7/pages/blog.js": 4,
+      "static/mTt~ZbIv82ZgJ6aCttkN7/pages/contact.js": 5,
+      "static/mTt~ZbIv82ZgJ6aCttkN7/pages/index.js": 6,
+      "static/mTt~ZbIv82ZgJ6aCttkN7/pages/projects.js": 7
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  }
+}

@@ -12,8 +12,8 @@ class Home extends React.Component {
             <>
                 <div className="introduction">
                     <div className="introduction--stinger">
-                    <small>Well hello there.</small>
-                    <h1>My name is <span className="accent">Isa</span>.</h1>
+                    <small>oh, uh, hey there. o7</small>
+                    <h1>My name is <span className="accent">Isaac Doud</span>.</h1>
                     <p>I'm a front end developer and creative currently living in Green Bay, WI.<br/>
                     I build websites and enjoy creating digital content (videos/music) as a hobby.<br/>
                     This is my little corner of the internet. Feel free to check out what I'm up to.</p>
@@ -26,7 +26,10 @@ class Home extends React.Component {
                 </div>
                 <div className="bigthree">
                     <div className="bigthree--section">
-                    <FontAwesomeIcon icon={['fab', 'js']} size="6x" color="#f7df1e"/>
+                        <div className="bigthree--icon">
+                        <FontAwesomeIcon icon={['fab', 'js']} size="4x" color="#f7df1e"/>
+                        </div>
+                    
                     <h1>Front End Webdev</h1>
                     <p>
                         I'm a self-taught front end web developer. Semantic HTML5, CSS3/SCSS, ES6+ JS for my core with
@@ -34,7 +37,9 @@ class Home extends React.Component {
                     </p>
                     </div>
                     <div className="bigthree--section">
-                    <FontAwesomeIcon icon={['fab', 'soundcloud']} size="6x" color="#ff8800"/>
+                    <div className="bigthree--icon">
+                    <FontAwesomeIcon icon={['fab', 'soundcloud']} size="4x" color="#ff8800"/>
+                    </div>
                     <h1>Music Production</h1>
                     <p>
                         On a whim a few years back, I picked up FL Studio during a sale. That was a mistake.
@@ -43,7 +48,9 @@ class Home extends React.Component {
                     </p>
                     </div>
                     <div className="bigthree--section">
-                    <FontAwesomeIcon icon={['fab', 'youtube']} size="6x" color="#ff0000"/>
+                    <div className="bigthree--icon">
+                    <FontAwesomeIcon icon={['fab', 'youtube']} size="4x" color="#ff0000"/>
+                    </div>
                     <h1>Video Production</h1>
                     <p>
                         I have a good amount of experience editing and assembling videos in Premiere Pro, as well

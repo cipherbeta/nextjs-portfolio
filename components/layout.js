@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import '../styles/main.scss';
 import Header from './common/Header';
+import Footer from './common/Footer';
 
 // Font Awesome Imports
 import {library} from '@fortawesome/fontawesome-svg-core';
@@ -19,7 +20,7 @@ const Layout = props => (
         <Header/>
         <div className="content">
             {props.children}
-            <h1>Footer</h1>
+            <Footer/>
         </div>
         
     </>

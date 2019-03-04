@@ -1,31 +1,30 @@
 import React from 'react';
 import Layout from '../components/layout';
 import {client} from '../utility/contentful';
+import BlogItem from '../components/blog/blogItem';
 
-class Blog extends React.Component { 
-    static async getInitialProps({req}){
-        let data;
-        return(
-            client
-                .getEntries()
-                .then(entries => {
-                    console.log(entries);
-                    data = entries;
-                    return data;
-                })
-            )
-    }
-    state = {
+const Blog = props => {
+    return(
+        <>  
+            <div className="bloglist">
+            {props.posts.map((item, i) => {
+                return(<BlogItem data={item.fields} title={item.fields.title} key={i}/>)
+            })}
+            </div>
+            
+        </>
+    )
+}
 
-    }
-
-    render(){
-        return(
-            <>
-                blog page
-            </>
-        )
-    }
+Blog.getInitialProps = async ({ req }) => {
+    const res = await client.getEntries({
+        'content_type': 'blogPost'
+    }).then(entries => {
+        console.log(entries);
+        return entries.items;
+    });
+    console.log(res);
+    return { posts: res };
 }
 
 export default Blog

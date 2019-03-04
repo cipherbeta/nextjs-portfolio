@@ -1,0 +1,58 @@
+{
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!node_modules/sass-loader/lib/loader.js??ref--5-2!styles/main.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "ignored node_modules/contentful-sdk-core/dist/es-modules os": 0,
+      "multi node_modules/next/dist/client/next": 1,
+      "css node_modules/css-loader/index.js??ref--5-1!node_modules/sass-loader/lib/loader.js??ref--5-2!styles/main.scss 0": 2
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2
+    }
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "static/mTt~ZbIv82ZgJ6aCttkN7/pages/_app.js": 2,
+      "static/mTt~ZbIv82ZgJ6aCttkN7/pages/_error.js": 3,
+      "static/mTt~ZbIv82ZgJ6aCttkN7/pages/about.js": 4,
+      "static/mTt~ZbIv82ZgJ6aCttkN7/pages/blog.js": 5,
+      "static/mTt~ZbIv82ZgJ6aCttkN7/pages/contact.js": 6,
+      "static/mTt~ZbIv82ZgJ6aCttkN7/pages/index.js": 7,
+      "static/mTt~ZbIv82ZgJ6aCttkN7/pages/projects.js": 8,
+      "static/runtime/main.js": 9
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
