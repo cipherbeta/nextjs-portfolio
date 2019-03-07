@@ -9362,7 +9362,7 @@ function freezeSys(obj) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getUserAgentHeader; });
-/* harmony import */ var os__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! os */ 3);
+/* harmony import */ var os__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! os */ 4);
 /* harmony import */ var os__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(os__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils */ "./node_modules/contentful-sdk-core/dist/es-modules/utils.js");
 
@@ -25752,7 +25752,7 @@ var client = contentful.createClient({
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!********************!*\
   !*** os (ignored) ***!
   \********************/
@@ -25763,7 +25763,7 @@ var client = contentful.createClient({
 
 /***/ }),
 
-/***/ 6:
+/***/ 7:
 /*!*****************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2Fhome%2Fisaacdoud%2FDocuments%2Fwebdev%2Fnext-js-portfolio%2Fpages%2Fabout.js ***!
   \*****************************************************************************************************************************************************/
@@ -25786,5 +25786,5 @@ module.exports = dll_3681e7fd756237ce51c6;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js","styles"]]]));;
+},[[7,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=about.js.map

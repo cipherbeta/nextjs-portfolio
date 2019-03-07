@@ -11,35 +11,26 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/isaacdoud/Documents/webdev/next-js-portfolio/components/blog/blogItem.js";
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+
 
 
 var BlogItem = function BlogItem(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "blogItem",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
+  var url = props.data.title.toLowerCase().replace(/[^\w ]+/g, '').replace(/ +/g, '-');
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/post/".concat(url),
+    as: "/p/".concat(props.sys.id)
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "blogItem"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "blogItem--image",
     style: {
       backgroundImage: "url(https:".concat(props.data.featuredImage.fields.file.url, ")")
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
+    }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "blogItem--title",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, props.title));
+    className: "blogItem--title"
+  }, props.title)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (BlogItem);
@@ -9408,7 +9399,7 @@ function freezeSys(obj) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getUserAgentHeader; });
-/* harmony import */ var os__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! os */ 3);
+/* harmony import */ var os__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! os */ 4);
 /* harmony import */ var os__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(os__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils */ "./node_modules/contentful-sdk-core/dist/es-modules/utils.js");
 
@@ -25688,7 +25679,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_blog_blogItem__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/blog/blogItem */ "./components/blog/blogItem.js");
 
 
-var _jsxFileName = "/home/isaacdoud/Documents/webdev/next-js-portfolio/pages/projects.js";
 
 
 
@@ -25696,22 +25686,13 @@ var _jsxFileName = "/home/isaacdoud/Documents/webdev/next-js-portfolio/pages/pro
 
 var Projects = function Projects(props) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "bloglist",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
+    className: "bloglist"
   }, props.projects.map(function (item, i) {
     return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_blog_blogItem__WEBPACK_IMPORTED_MODULE_5__["default"], {
       data: item.fields,
+      sys: item.sys,
       title: item.fields.title,
-      key: i,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
+      key: i
     });
   })));
 };
@@ -25784,7 +25765,7 @@ var client = contentful.createClient({
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!********************!*\
   !*** os (ignored) ***!
   \********************/
@@ -25795,7 +25776,7 @@ var client = contentful.createClient({
 
 /***/ }),
 
-/***/ 4:
+/***/ 6:
 /*!***********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fprojects&absolutePagePath=%2Fhome%2Fisaacdoud%2FDocuments%2Fwebdev%2Fnext-js-portfolio%2Fpages%2Fprojects.js ***!
   \***********************************************************************************************************************************************************/
@@ -25818,5 +25799,5 @@ module.exports = dll_3681e7fd756237ce51c6;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]));;
+},[[6,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=projects.js.map

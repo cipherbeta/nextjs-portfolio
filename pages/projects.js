@@ -8,7 +8,7 @@ const Projects = props => {
         <>  
             <div className="bloglist">
             {props.projects.map((item, i) => {
-                return(<BlogItem data={item.fields} title={item.fields.title} key={i}/>)
+                return(<BlogItem data={item.fields} sys={item.sys} title={item.fields.title} key={i}/>)
             })}
             </div>
             
