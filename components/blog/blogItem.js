@@ -4,7 +4,8 @@ import Link from 'next/link';
 const BlogItem = props => {
     const url = props.data.title.toLowerCase().replace(/[^\w ]+/g,'').replace(/ +/g,'-');
     return(
-        <Link href={`/post/${url}`} as={`/p/${props.sys.id}`}>
+        // <Link prefetch href={`/post/${url}`} as={`/p/${props.sys.id}`}>
+        <Link prefetch href={`/p/${props.sys.id}`}>
             <div className="blogItem">
                 <div className="blogItem--image" 
                 style={{backgroundImage: `url(https:${props.data.featuredImage.fields.file.url})`}}>

@@ -24,7 +24,7 @@ class Header extends Component {
         return(
             <>
             <nav className="topbar">
-                <span>
+                <span className="links">
                 <Link prefetch href="/"><a>Home</a></Link>
                 <Link prefetch href="/about"><a>About</a></Link>
                 <Link prefetch href="/blog"><a>Blog</a></Link>
@@ -33,9 +33,27 @@ class Header extends Component {
                 <span className="wtexture">
                     drop.me.a.message ^-^ >>>
                 </span>
-                <span>
+                <div className="social">
+                    <a href="https://twitter.com/TheMyopicNinja" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={['fab', 'twitter']}/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/isaac-doud-33b803105/" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={['fab', 'linkedin']}/>
+                    </a>
+                    <a href="https://codepen.io/cipherbeta/" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={['fab', 'codepen']}/>
+                    </a>
+                    <a href="https://github.com/cipherbeta" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={['fab', 'github']}/>
+                    </a>
+                    <a href="https://gitlab.com/WaifuCannon" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={['fab', 'gitlab']}/>
+                    </a>
+                </div>
+                <span className="links">
                 <Link prefetch href="/contact"><a className="right">Contact</a></Link>
                 </span>
+                <Sandwich toggle={this.handleMenuToggle} active={this.state.offCanvasMenuOpen}/>
             </nav>
             <div className="header">
                 <div className="header--top">
@@ -44,29 +62,28 @@ class Header extends Component {
                             <h1>I<span className="accent">/</span>D</h1>
                         </div>
                     </Link>
-                    {/* <Sandwich toggle={this.handleMenuToggle} active={this.state.offCanvasMenuOpen}/> */}
+                    
                     <span className="header--wtexture">
                         isaac_doud.front.end.webdev
                     </span>
                 </div>
                 
                 <div className="header--bottom">
-                    <a href="#">
+                    <a href="https://twitter.com/TheMyopicNinja" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={['fab', 'twitter']}/>
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/isaac-doud-33b803105/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={['fab', 'linkedin']}/>
                     </a>
-                    <a href="#">
+                    <a href="https://codepen.io/cipherbeta/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={['fab', 'codepen']}/>
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/cipherbeta" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={['fab', 'github']}/>
                     </a>
-                    <a href="#">
+                    <a href="https://gitlab.com/WaifuCannon" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={['fab', 'gitlab']}/>
                     </a>
-                    
                 </div>
             </div>
             <OffCanvasMenu active={this.state.offCanvasMenuOpen}/>

@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
 
 /***/ "./components/common/Footer.js":
 /*!*************************************!*\
@@ -11,36 +11,12 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/isaacdoud/Documents/webdev/next-js-portfolio/components/common/Footer.js";
 
 
 var Footer = function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
-    className: "footer",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, "Website developed on titty skittles by isaac doud in 2019"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, "Built with ReactJS x NextJS"));
+    className: "footer"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "Website developed on titty skittles by isaac doud in 2019"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "Built with ReactJS x NextJS"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -77,7 +53,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/isaacdoud/Documents/webdev/next-js-portfolio/components/common/Header.js";
 
 
 
@@ -123,234 +98,111 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("nav", {
-        className: "topbar",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26
-        },
-        __self: this
+        className: "topbar"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27
-        },
-        __self: this
+        className: "links"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
         prefetch: true,
-        href: "/",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28
-        },
-        __self: this
-      }, "Home")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        href: "/"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", null, "Home")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
         prefetch: true,
-        href: "/about",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        },
-        __self: this
-      }, "About")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        href: "/about"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", null, "About")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
         prefetch: true,
-        href: "/blog",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30
-        },
-        __self: this
-      }, "Blog")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        href: "/blog"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", null, "Blog")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
         prefetch: true,
-        href: "/projects",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31
-        },
-        __self: this
+        href: "/projects"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", null, "Projects"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
+        className: "wtexture"
+      }, "drop.me.a.message ^-^ >>>"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "social"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31
-        },
-        __self: this
-      }, "Projects"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-        className: "wtexture",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33
-        },
-        __self: this
-      }, "drop.me.a.message ^-^ >>>"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 36
-        },
-        __self: this
+        href: "https://twitter.com/TheMyopicNinja",
+        target: "_blank",
+        rel: "noopener noreferrer"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_9__["FontAwesomeIcon"], {
+        icon: ['fab', 'twitter']
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+        href: "https://www.linkedin.com/in/isaac-doud-33b803105/",
+        target: "_blank",
+        rel: "noopener noreferrer"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_9__["FontAwesomeIcon"], {
+        icon: ['fab', 'linkedin']
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+        href: "https://codepen.io/cipherbeta/",
+        target: "_blank",
+        rel: "noopener noreferrer"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_9__["FontAwesomeIcon"], {
+        icon: ['fab', 'codepen']
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+        href: "https://github.com/cipherbeta",
+        target: "_blank",
+        rel: "noopener noreferrer"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_9__["FontAwesomeIcon"], {
+        icon: ['fab', 'github']
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+        href: "https://gitlab.com/WaifuCannon",
+        target: "_blank",
+        rel: "noopener noreferrer"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_9__["FontAwesomeIcon"], {
+        icon: ['fab', 'gitlab']
+      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
+        className: "links"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
         prefetch: true,
-        href: "/contact",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37
-        },
-        __self: this
+        href: "/contact"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        className: "right",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37
-        },
-        __self: this
-      }, "Contact")))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "header",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
+        className: "right"
+      }, "Contact"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Sandwich__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        toggle: this.handleMenuToggle,
+        active: this.state.offCanvasMenuOpen
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "header"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "header--top",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 41
-        },
-        __self: this
+        className: "header--top"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
-        href: "/",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 42
-        },
-        __self: this
+        href: "/"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "logo",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 44
-        },
-        __self: this
-      }, "I", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-        className: "accent",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 44
-        },
-        __self: this
+        className: "logo"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", null, "I", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
+        className: "accent"
       }, "/"), "D"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-        className: "header--wtexture",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 48
-        },
-        __self: this
+        className: "header--wtexture"
       }, "isaac_doud.front.end.webdev")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "header--bottom",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 53
-        },
-        __self: this
+        className: "header--bottom"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        href: "#",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 54
-        },
-        __self: this
+        href: "https://twitter.com/TheMyopicNinja",
+        target: "_blank",
+        rel: "noopener noreferrer"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_9__["FontAwesomeIcon"], {
-        icon: ['fab', 'twitter'],
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55
-        },
-        __self: this
+        icon: ['fab', 'twitter']
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        href: "#",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 57
-        },
-        __self: this
+        href: "https://www.linkedin.com/in/isaac-doud-33b803105/",
+        target: "_blank",
+        rel: "noopener noreferrer"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_9__["FontAwesomeIcon"], {
-        icon: ['fab', 'linkedin'],
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 58
-        },
-        __self: this
+        icon: ['fab', 'linkedin']
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        href: "#",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 60
-        },
-        __self: this
+        href: "https://codepen.io/cipherbeta/",
+        target: "_blank",
+        rel: "noopener noreferrer"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_9__["FontAwesomeIcon"], {
-        icon: ['fab', 'codepen'],
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 61
-        },
-        __self: this
+        icon: ['fab', 'codepen']
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        href: "#",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 63
-        },
-        __self: this
+        href: "https://github.com/cipherbeta",
+        target: "_blank",
+        rel: "noopener noreferrer"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_9__["FontAwesomeIcon"], {
-        icon: ['fab', 'github'],
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 64
-        },
-        __self: this
+        icon: ['fab', 'github']
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        href: "#",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 66
-        },
-        __self: this
+        href: "https://gitlab.com/WaifuCannon",
+        target: "_blank",
+        rel: "noopener noreferrer"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_9__["FontAwesomeIcon"], {
-        icon: ['fab', 'gitlab'],
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 67
-        },
-        __self: this
+        icon: ['fab', 'gitlab']
       })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_OffCanvasMenu__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        active: this.state.offCanvasMenuOpen,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 72
-        },
-        __self: this
+        active: this.state.offCanvasMenuOpen
       }));
     }
   }]);
@@ -375,106 +227,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/isaacdoud/Documents/webdev/next-js-portfolio/components/common/OffCanvasMenu.js";
 
 
 
 var OffCanvasMenu = function OffCanvasMenu(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("aside", {
-    className: "offcanvasmenu" + (props.active ? " active" : ""),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "offcanvasmenu" + (props.active ? " active" : "")
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     style: {
       margin: 0,
       padding: 0
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
+    }
   }, "Isa Doud"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     style: {
       marginBottom: '2em'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, "Front End Developer // Creative")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    }
+  }, "Front End Developer // Creative")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     prefetch: true,
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     prefetch: true,
-    href: "/blog",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, "Blog")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/blog"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Blog")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     prefetch: true,
-    href: "/projects",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, "Projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/projects"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     prefetch: true,
-    href: "/contact",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, "Contact"))));
+    href: "/contact"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Contact"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (OffCanvasMenu);
@@ -492,39 +272,18 @@ var OffCanvasMenu = function OffCanvasMenu(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/isaacdoud/Documents/webdev/next-js-portfolio/components/common/Sandwich.js";
 
 
 var Sandwich = function Sandwich(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     onClick: props.toggle,
-    className: "sandwich" + (props.active ? " active" : ""),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+    className: "sandwich" + (props.active ? " active" : "")
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "sandwich-slice",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
+    className: "sandwich-slice"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "sandwich-slice",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
+    className: "sandwich-slice"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "sandwich-slice",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
+    className: "sandwich-slice"
   }));
 };
 
@@ -551,7 +310,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./common/Footer */ "./components/common/Footer.js");
 /* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/fontawesome-svg-core */ "./node_modules/@fortawesome/fontawesome-svg-core/index.es.js");
 /* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/free-brands-svg-icons */ "./node_modules/@fortawesome/free-brands-svg-icons/index.es.js");
-var _jsxFileName = "/home/isaacdoud/Documents/webdev/next-js-portfolio/components/layout.js";
 
 
 
@@ -563,41 +321,13 @@ var _jsxFileName = "/home/isaacdoud/Documents/webdev/next-js-portfolio/component
 _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_5__["library"].add(_fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faTwitter"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faLinkedin"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faCodepen"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faGithub"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faGitlab"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faHtml5"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faCss3"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faJs"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faReact"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faSoundcloud"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faYoutube"]);
 
 var Layout = function Layout(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_1___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
     href: "https://fonts.googleapis.com/css?family=Abel",
     rel: "stylesheet",
-    key: "font-import",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }, props.children, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  })));
+    key: "font-import"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_Header__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "content"
+  }, props.children, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
@@ -12673,10 +12403,10 @@ module.exports = __webpack_require__(/*! ./dist/lib/head */ "./node_modules/next
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fisaacdoud%2FDocuments%2Fwebdev%2Fnext-js-portfolio%2Fpages%2Findex.js!./":
-/*!********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fisaacdoud%2FDocuments%2Fwebdev%2Fnext-js-portfolio%2Fpages%2Findex.js ***!
-  \********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=F%3A%5Cwebdev%5Cnextjs-portfolio%5Cpages%5Cindex.js!./":
+/*!****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=F%3A%5Cwebdev%5Cnextjs-portfolio%5Cpages%5Cindex.js ***!
+  \****************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17403,7 +17133,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/isaacdoud/Documents/webdev/next-js-portfolio/pages/index.js";
 
 
 
@@ -17436,206 +17165,48 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "introduction",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 13
-        },
-        __self: this
+        className: "introduction"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "introduction--stinger",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("small", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        },
-        __self: this
-      }, "oh, uh, hey there. o7"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16
-        },
-        __self: this
-      }, "My name is ", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-        className: "accent",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16
-        },
-        __self: this
-      }, "Isaac Doud"), "."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        },
-        __self: this
-      }, "I'm a front end developer and creative currently living in Green Bay, WI.", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        },
-        __self: this
-      }), "I build websites and enjoy creating digital content (videos/music) as a hobby.", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        },
-        __self: this
-      }), "This is my little corner of the internet. Feel free to check out what I'm up to."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
+        className: "introduction--stinger"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("small", null, "oh, uh, hey there. o7"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", null, "My name is ", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
+        className: "accent"
+      }, "Isaac Doud"), "."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", null, "I'm a front end developer and creative currently living in Green Bay, WI.", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), "I build websites and enjoy creating digital content (videos/music) as a hobby.", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), "This is my little corner of the internet. Feel free to check out what I'm up to."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
         style: {
           display: 'inline-flex'
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        },
-        __self: this
+        }
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
         prefetch: true,
-        href: "/about",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        },
-        __self: this
-      }, "Learn a bit about me")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        href: "/about"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", null, "Learn a bit about me")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
         prefetch: true,
-        href: "/projects",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 22
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 22
-        },
-        __self: this
-      }, "Check out what I'm working on"))))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "bigthree",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27
-        },
-        __self: this
+        href: "/projects"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", null, "Check out what I'm working on"))))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "bigthree"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "bigthree--section",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28
-        },
-        __self: this
+        className: "bigthree--section"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "bigthree--icon",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        },
-        __self: this
+        className: "bigthree--icon"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_10__["FontAwesomeIcon"], {
         icon: ['fab', 'js'],
         size: "4x",
-        color: "#f7df1e",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33
-        },
-        __self: this
-      }, "Front End Webdev"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 34
-        },
-        __self: this
-      }, "I'm a self-taught front end web developer. Semantic HTML5, CSS3/SCSS, ES6+ JS for my core with a focus on ReactJS development. Looking to learn fullstack dev soon!")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "bigthree--section",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 39
-        },
-        __self: this
+        color: "#f7df1e"
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", null, "Front End Webdev"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", null, "I'm a self-taught front end web developer. Semantic HTML5, CSS3/SCSS, ES6+ JS for my core with a focus on ReactJS development. Looking to learn fullstack dev soon!")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "bigthree--section"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "bigthree--icon",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
+        className: "bigthree--icon"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_10__["FontAwesomeIcon"], {
         icon: ['fab', 'soundcloud'],
         size: "4x",
-        color: "#ff8800",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 41
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43
-        },
-        __self: this
-      }, "Music Production"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 44
-        },
-        __self: this
-      }, "On a whim a few years back, I picked up FL Studio during a sale. That was a mistake. I've ended up spending a lot of time in there making various small tracks and recordings. While I'm not a great producer, I can make some decent tracks in a cinch if needed.")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "bigthree--section",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 50
-        },
-        __self: this
+        color: "#ff8800"
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", null, "Music Production"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", null, "On a whim a few years back, I picked up FL Studio during a sale. That was a mistake. I've ended up spending a lot of time in there making various small tracks and recordings. While I'm not a great producer, I can make some decent tracks in a cinch if needed.")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "bigthree--section"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "bigthree--icon",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 51
-        },
-        __self: this
+        className: "bigthree--icon"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_10__["FontAwesomeIcon"], {
         icon: ['fab', 'youtube'],
         size: "4x",
-        color: "#ff0000",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 52
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 54
-        },
-        __self: this
-      }, "Video Production"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55
-        },
-        __self: this
-      }, "I have a good amount of experience editing and assembling videos in Premiere Pro, as well as experience inside Adobe Audition and FL Studio for mastering audio for videos. It's something I enjoy doing every once in a while. Eventually when I get off my lazy arse I want to start a YT channel."))));
+        color: "#ff0000"
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", null, "Video Production"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", null, "I have a good amount of experience editing and assembling videos in Premiere Pro, as well as experience inside Adobe Audition and FL Studio for mastering audio for videos. It's something I enjoy doing every once in a while. Eventually when I get off my lazy arse I want to start a YT channel."))));
     }
   }]);
 
@@ -17647,13 +17218,13 @@ function (_React$Component) {
 /***/ }),
 
 /***/ 2:
-/*!************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fisaacdoud%2FDocuments%2Fwebdev%2Fnext-js-portfolio%2Fpages%2Findex.js ***!
-  \************************************************************************************************************************************************/
+/*!********************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=F%3A%5Cwebdev%5Cnextjs-portfolio%5Cpages%5Cindex.js ***!
+  \********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fisaacdoud%2FDocuments%2Fwebdev%2Fnext-js-portfolio%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fisaacdoud%2FDocuments%2Fwebdev%2Fnext-js-portfolio%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=F%3A%5Cwebdev%5Cnextjs-portfolio%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=F%3A%5Cwebdev%5Cnextjs-portfolio%5Cpages%5Cindex.js!./");
 
 
 /***/ }),

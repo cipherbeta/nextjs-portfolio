@@ -4,7 +4,7 @@ import {client} from '../utility/contentful';
 import BlogItem from '../components/blog/blogItem';
 import {withRouter} from 'next/router';
 
-const Projects = withRouter(props => { 
+const Post = withRouter(props => { 
     
     return(
         <>  
@@ -20,16 +20,17 @@ const Projects = withRouter(props => {
     )
 });
 
-Projects.getInitialProps = async ({ req, props }) => {
-    console.log(props);
-    // const res = await client.getEntries({
-    //     'content_type': 'portfolioItem'
-    // }).then(entries => {
-    //     console.log(entries);
-    //     return entries.items;
-    // });
-    // console.log(res);
-    // return { projects: res };
+Post.getInitialProps = async (context) => {
+    console.log(context);
+    const id = context.query.id;
+    const res = await client.getEntries({
+        'content_type': 'blogPost', 'id': 'id'
+    }).then(entries => {
+        console.log(entries);
+        return entries.items;
+    });
+    console.log(res);
+    return { projects: res };
 }
 
-export default Projects;
+export default Post;
