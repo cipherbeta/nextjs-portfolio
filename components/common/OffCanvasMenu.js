@@ -9,7 +9,7 @@ const OffCanvasMenu = props => (
         </div>
         
         <div>
-            <Link prefetch href="/"><a>Home</a></Link>
+            <Link prefetch href="/"><a onClick={props.toggle}>Home</a></Link>
             <Link prefetch href="/blog"><a>Blog</a></Link>
             <Link prefetch href="/projects"><a>Projects</a></Link>
             <Link prefetch href="/contact"><a>Contact</a></Link>
