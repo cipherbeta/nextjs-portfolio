@@ -51,19 +51,28 @@
       "static\\eGLTJBwa0OtkU5TLrekGz\\pages\\contact.js": 5,
       "static\\eGLTJBwa0OtkU5TLrekGz\\pages\\index.js": 6,
       "static\\eGLTJBwa0OtkU5TLrekGz\\pages\\post.js": 7,
-      "static\\eGLTJBwa0OtkU5TLrekGz\\pages\\projects.js": 8
+      "static\\eGLTJBwa0OtkU5TLrekGz\\pages\\projects.js": 8,
+      "static\\J8TEqHgIsGnIKQ4eee6Cf\\pages\\_app.js": 9,
+      "static\\J8TEqHgIsGnIKQ4eee6Cf\\pages\\_document.js": 10,
+      "static\\J8TEqHgIsGnIKQ4eee6Cf\\pages\\_error.js": 11,
+      "static\\J8TEqHgIsGnIKQ4eee6Cf\\pages\\about.js": 12,
+      "static\\J8TEqHgIsGnIKQ4eee6Cf\\pages\\blog.js": 13,
+      "static\\J8TEqHgIsGnIKQ4eee6Cf\\pages\\contact.js": 14,
+      "static\\J8TEqHgIsGnIKQ4eee6Cf\\pages\\index.js": 15,
+      "static\\J8TEqHgIsGnIKQ4eee6Cf\\pages\\post.js": 16,
+      "static\\J8TEqHgIsGnIKQ4eee6Cf\\pages\\projects.js": 17
     },
     "bySource": {},
     "usedIds": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      9
     ]
   }
 }
