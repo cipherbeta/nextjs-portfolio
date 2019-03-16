@@ -3,6 +3,7 @@ import Sandwich from './Sandwich';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import OffCanvasMenu from './OffCanvasMenu';
 import Link from 'next/link';
+import { PoseGroup } from 'react-pose';
 
 class Header extends Component {
     state = {
@@ -11,13 +12,6 @@ class Header extends Component {
 
     handleMenuToggle = () => {
         this.setState({offCanvasMenuOpen: !this.state.offCanvasMenuOpen});
-    }
-
-    // Runs a check to see if a user's click is outside of the menu boundaries while
-    // the menu is open. If so, closes menu for a more fluid experience.
-    handleClickListener = () => {
-        console.log("checking for click");
-        
     }
 
     render(){
@@ -86,7 +80,8 @@ class Header extends Component {
                     </a>
                 </div>
             </div>
-            <OffCanvasMenu active={this.state.offCanvasMenuOpen}/>
+            <OffCanvasMenu isActive={this.state.offCanvasMenuOpen} toggle={this.handleMenuToggle}/>
+            
             </>
         );
     }

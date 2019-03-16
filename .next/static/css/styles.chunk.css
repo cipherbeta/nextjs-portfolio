@@ -303,14 +303,14 @@ template {
 [hidden] {
   display: none; }
 
-.topbar a::after, .header--bottom a::after, .topbar a::before, .header--bottom a::before {
+.topbar a::after, .header--bottom a::after, .offcanvasmenu a::after, .topbar a::before, .header--bottom a::before, .offcanvasmenu a::before {
   display: inline-block;
   opacity: 0;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
   -moz-transition: -moz-transform 0.3s, opacity 0.2s;
   transition: transform 0.3s, opacity 0.2s; }
 
-.topbar a::before, .header--bottom a::before {
+.topbar a::before, .header--bottom a::before, .offcanvasmenu a::before {
   margin-right: 4px;
   content: '[';
   color: #76dd22;
@@ -318,7 +318,7 @@ template {
   -moz-transform: translateX(20px);
   transform: translateX(20px); }
 
-.topbar a::after, .header--bottom a::after {
+.topbar a::after, .header--bottom a::after, .offcanvasmenu a::after {
   margin-left: 4px;
   content: ']';
   color: #76dd22;
@@ -326,7 +326,7 @@ template {
   -moz-transform: translateX(-20px);
   transform: translateX(-20px); }
 
-.topbar a:focus::after, .header--bottom a:focus::after, .topbar a:focus::before, .header--bottom a:focus::before, .topbar a:hover::after, .header--bottom a:hover::after, .topbar a:hover::before, .header--bottom a:hover::before {
+.topbar a:focus::after, .header--bottom a:focus::after, .offcanvasmenu a:focus::after, .topbar a:focus::before, .header--bottom a:focus::before, .offcanvasmenu a:focus::before, .topbar a:hover::after, .header--bottom a:hover::after, .offcanvasmenu a:hover::after, .topbar a:hover::before, .header--bottom a:hover::before, .offcanvasmenu a:hover::before {
   opacity: 1;
   -webkit-transform: translateX(0px);
   -moz-transform: translateX(0px);
@@ -495,10 +495,10 @@ template {
 
 .offcanvasmenu {
   width: 100%;
-  background: #0e0e0e;
+  background: rgba(14, 14, 14, 0.85);
   color: white;
   position: fixed;
-  top: -100vh;
+  top: 0;
   left: 0;
   right: 0;
   height: 100vh;
@@ -526,7 +526,8 @@ template {
     text-decoration: none;
     margin: .125em;
     text-transform: uppercase;
-    letter-spacing: .05em; }
+    letter-spacing: .05em;
+    cursor: pointer; }
 
 .content {
   padding-left: 4em;

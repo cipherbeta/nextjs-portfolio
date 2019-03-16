@@ -1,20 +1,67 @@
 import React from 'react';
 import Link from 'next/link';
+import posed, { PoseGroup } from 'react-pose';
+
+const OffCanvasMenuWrapper = posed.div({
+    enter: {
+        opacity: 1,
+        y: 0,
+        beforeChildren: true,
+        staggerChildren: 150,
+        delayChildren: 100
+    },
+    exit: {
+        opacity: 0,
+        y: 50,
+        transition: { duration: 50 },
+        delayChildren: 50,
+        beforeChildren: true
+    }
+})
+
+const OffCanvasMenuSection = posed.div({
+    enter: {
+        opacity: 1,
+        y: 20,
+        staggerChildren: 50,
+        beforeChildren: true
+    },
+    exit: {
+        opacity: 0,
+        y: -30
+    }
+});
+
+const OffCanvasMenuA = posed.a({
+    enter: {
+        opacity: 1,
+        y: 0
+    },
+    exit: {
+        opacity: 0,
+        y: 10
+    }
+})
 
 const OffCanvasMenu = props => (
-    <aside className={"offcanvasmenu" + (props.active ? " active" : "")}>
-        <div>
-            <h1 style={{margin: 0, padding: 0}}>Isa Doud</h1>
-            <small style={{marginBottom: '2em'}}>Front End Developer // Creative</small>
-        </div>
-        
-        <div>
-            <Link prefetch href="/"><a onClick={props.toggle}>Home</a></Link>
-            <Link prefetch href="/blog"><a>Blog</a></Link>
-            <Link prefetch href="/projects"><a>Projects</a></Link>
-            <Link prefetch href="/contact"><a>Contact</a></Link>
-        </div>
-    </aside>
+    <PoseGroup>
+        {props.isActive && [
+            <OffCanvasMenuWrapper className="offcanvasmenu" key="ofcmenu">
+                <OffCanvasMenuSection>
+                    <h1 style={{margin: 0, padding: 0}}>Isa Doud</h1>
+                    <small style={{marginBottom: '2em'}}>Front End Developer // Creative</small>
+                </OffCanvasMenuSection>
+                
+                <OffCanvasMenuSection>
+                    <Link prefetch href="/"><OffCanvasMenuA onClick={props.toggle}>Home</OffCanvasMenuA></Link>
+                    <Link prefetch href="/about"><OffCanvasMenuA onClick={props.toggle}>About</OffCanvasMenuA></Link>
+                    <Link prefetch href="/blog"><OffCanvasMenuA onClick={props.toggle}>Blog</OffCanvasMenuA></Link>
+                    <Link prefetch href="/projects"><OffCanvasMenuA onClick={props.toggle}>Projects</OffCanvasMenuA></Link>
+                    <Link prefetch href="/contact"><OffCanvasMenuA onClick={props.toggle}>Contact</OffCanvasMenuA></Link>
+                </OffCanvasMenuSection>
+            </OffCanvasMenuWrapper>
+        ]}
+    </PoseGroup>
 )
 
 export default OffCanvasMenu;

@@ -109,7 +109,7 @@ __webpack_require__.r(__webpack_exports__);
 var Footer = function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
     className: "footer"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "Website developed on titty skittles by isaac doud in 2019"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "Built with ReactJS x NextJS"));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "Website developed by isaac doud"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "Built with ReactJS x NextJS"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -140,6 +140,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _OffCanvasMenu__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./OffCanvasMenu */ "./components/common/OffCanvasMenu.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-pose */ "react-pose");
+/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react_pose__WEBPACK_IMPORTED_MODULE_12__);
+
 
 
 
@@ -179,10 +182,6 @@ function (_Component) {
       _this.setState({
         offCanvasMenuOpen: !_this.state.offCanvasMenuOpen
       });
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleClickListener", function () {
-      console.log("checking for click");
     });
 
     return _this;
@@ -296,7 +295,8 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_9__["FontAwesomeIcon"], {
         icon: ['fab', 'gitlab']
       })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_OffCanvasMenu__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        active: this.state.offCanvasMenuOpen
+        isActive: this.state.offCanvasMenuOpen,
+        toggle: this.handleMenuToggle
       }));
     }
   }]);
@@ -321,13 +321,57 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-pose */ "react-pose");
+/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_pose__WEBPACK_IMPORTED_MODULE_2__);
 
 
+
+var OffCanvasMenuWrapper = react_pose__WEBPACK_IMPORTED_MODULE_2___default.a.div({
+  enter: {
+    opacity: 1,
+    y: 0,
+    beforeChildren: true,
+    staggerChildren: 150,
+    delayChildren: 100
+  },
+  exit: {
+    opacity: 0,
+    y: 50,
+    transition: {
+      duration: 50
+    },
+    delayChildren: 50,
+    beforeChildren: true
+  }
+});
+var OffCanvasMenuSection = react_pose__WEBPACK_IMPORTED_MODULE_2___default.a.div({
+  enter: {
+    opacity: 1,
+    y: 20,
+    staggerChildren: 50,
+    beforeChildren: true
+  },
+  exit: {
+    opacity: 0,
+    y: -30
+  }
+});
+var OffCanvasMenuA = react_pose__WEBPACK_IMPORTED_MODULE_2___default.a.a({
+  enter: {
+    opacity: 1,
+    y: 0
+  },
+  exit: {
+    opacity: 0,
+    y: 10
+  }
+});
 
 var OffCanvasMenu = function OffCanvasMenu(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("aside", {
-    className: "offcanvasmenu" + (props.active ? " active" : "")
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_pose__WEBPACK_IMPORTED_MODULE_2__["PoseGroup"], null, props.isActive && [react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuWrapper, {
+    className: "offcanvasmenu",
+    key: "ofcmenu"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuSection, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     style: {
       margin: 0,
       padding: 0
@@ -336,21 +380,32 @@ var OffCanvasMenu = function OffCanvasMenu(props) {
     style: {
       marginBottom: '2em'
     }
-  }, "Front End Developer // Creative")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "Front End Developer // Creative")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuSection, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     prefetch: true,
     href: "/"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuA, {
     onClick: props.toggle
   }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     prefetch: true,
+    href: "/about"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuA, {
+    onClick: props.toggle
+  }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    prefetch: true,
     href: "/blog"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Blog")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuA, {
+    onClick: props.toggle
+  }, "Blog")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     prefetch: true,
     href: "/projects"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuA, {
+    onClick: props.toggle
+  }, "Projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     prefetch: true,
     href: "/contact"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Contact"))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuA, {
+    onClick: props.toggle
+  }, "Contact"))))]);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (OffCanvasMenu);
@@ -2418,6 +2473,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "react-pose":
+/*!*****************************!*\
+  !*** external "react-pose" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-pose");
 
 /***/ }),
 

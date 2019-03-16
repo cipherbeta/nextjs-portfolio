@@ -237,10 +237,10 @@
 
 .offcanvasmenu {
     width: 100%;
-    background: $black;
+    background: rgba(14,14,14,.85);
     color: white;
     position: fixed;
-    top: -100vh;
+    top: 0;
     left: 0;
     right: 0;
     height: 100vh;
@@ -272,5 +272,7 @@
         margin: .125em;
         text-transform: uppercase;
         letter-spacing: .05em;
+        cursor: pointer;
+        @extend %bracketeer;
     }
 }
