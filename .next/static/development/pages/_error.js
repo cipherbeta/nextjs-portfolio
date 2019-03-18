@@ -10067,7 +10067,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!***************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=F%3A%5Cwebdev%5Cnextjs-portfolio%5Cpages%5C_error.js ***!
   \***************************************************************************************************************************/
@@ -10090,5 +10090,5 @@ module.exports = dll_3681e7fd756237ce51c6;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[3,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=_error.js.map

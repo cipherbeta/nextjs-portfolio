@@ -2,10 +2,14 @@ import React from 'react';
 import Layout from '../components/layout';
 import {client} from '../utility/contentful';
 import BlogItem from '../components/blog/blogItem';
+import Head from 'next/head';
 
 const Projects = props => { 
     return(
         <>  
+            <Head>
+                <title>Isaac Doud - Projects</title>
+            </Head>
             <div className="bloglist">
             {props.projects.map((item, i) => {
                 return(<BlogItem data={item.fields} sys={item.sys} title={item.fields.title} key={i}/>)

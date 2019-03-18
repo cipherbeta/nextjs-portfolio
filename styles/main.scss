@@ -7,11 +7,14 @@
 @import './common/_pageanim';
 @import './common/_buttons';
 @import './common/_blog';
+@import './common/_about';
+@import './common/_nprogress';
 
 body { 
     font-family: $bodyFont;
     background: $black;
     color: white;
+    font-display: swap;
 };
 
 .accent {
@@ -25,6 +28,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
     &--stinger {
         flex-grow: 1;
         height: 50vh;
@@ -38,7 +42,7 @@ body {
         justify-content: center;
         align-items: center;
         height: 50vh;
-        background-image: linear-gradient(rgba(14,14,14,1), rgba(14,14,14,.85), rgba(14,14,14,1)), url('/static/images/bg.jpg');
+        background-image: linear-gradient(rgba(14,14,14,1), rgba(14,14,14,.85), rgba(14,14,14,1)), url('/static/images/bg.webp');
         background-size: cover;
         background-position: top center;
         position: relative;
@@ -103,7 +107,7 @@ body {
     z-index: -99;
     width: 100%;
     position: relative;
-    background-image: url('/static/images/404.jpg');
+    background-image: url('/static/images/404.webp');
     background-size: cover;
     background-position: top center;
     &--overlay {

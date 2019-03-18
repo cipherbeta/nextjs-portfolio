@@ -6,7 +6,7 @@ const BlogItem = props => {
     console.log(props);
     return(
         // <Link prefetch href={`/post/${url}`} as={`/p/${props.sys.id}`}>
-        <Link prefetch as={`/p/${props.sys.id}`} href={`/post?title="anchovies"`}>
+        <Link prefetch as={`/p/${props.sys.id}`} href={`/post?title=${props.sys.id}`}>
             <div className="blogItem">
                 <div className="blogItem--image" 
                 style={{backgroundImage: `url(https:${props.data.featuredImage.fields.file.url})`}}>

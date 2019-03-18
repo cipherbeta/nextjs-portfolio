@@ -1,6 +1,7 @@
 import Layout from '../components/layout';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Head from 'next/head';
 
 class Home extends React.Component { 
     state = {
@@ -10,6 +11,9 @@ class Home extends React.Component {
     render(){
         return(
             <>
+                <Head>
+                    <title>Isaac Doud - Front End WebDev</title>
+                </Head>
                 <div className="introduction">
                     <div className="introduction--stinger">
                     <small>oh, uh, hey there. o7</small>
