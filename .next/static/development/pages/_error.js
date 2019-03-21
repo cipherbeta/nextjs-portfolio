@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\_error.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_error.js"],{
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
@@ -5769,10 +5769,10 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=F%3A%5Cwebdev%5Cnextjs-portfolio%5Cpages%5C_error.js!./":
-/*!***********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=F%3A%5Cwebdev%5Cnextjs-portfolio%5Cpages%5C_error.js ***!
-  \***********************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=%2Fhome%2Fisaacdoud%2FDocuments%2Fwebdev%2Fnext-js-portfolio%2Fpages%2F_error.js!./":
+/*!***************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=%2Fhome%2Fisaacdoud%2FDocuments%2Fwebdev%2Fnext-js-portfolio%2Fpages%2F_error.js ***!
+  \***************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10067,14 +10067,14 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 3:
-/*!***************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=F%3A%5Cwebdev%5Cnextjs-portfolio%5Cpages%5C_error.js ***!
-  \***************************************************************************************************************************/
+/***/ 5:
+/*!*******************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=%2Fhome%2Fisaacdoud%2FDocuments%2Fwebdev%2Fnext-js-portfolio%2Fpages%2F_error.js ***!
+  \*******************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F_error&absolutePagePath=F%3A%5Cwebdev%5Cnextjs-portfolio%5Cpages%5C_error.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=F%3A%5Cwebdev%5Cnextjs-portfolio%5Cpages%5C_error.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F_error&absolutePagePath=%2Fhome%2Fisaacdoud%2FDocuments%2Fwebdev%2Fnext-js-portfolio%2Fpages%2F_error.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=%2Fhome%2Fisaacdoud%2FDocuments%2Fwebdev%2Fnext-js-portfolio%2Fpages%2F_error.js!./");
 
 
 /***/ }),
@@ -10090,5 +10090,5 @@ module.exports = dll_3681e7fd756237ce51c6;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[5,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=_error.js.map

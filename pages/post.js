@@ -9,8 +9,8 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 
 dayjs.extend(relativeTime);
 
-const Post = withRouter(props => { 
-    console.log(props);
+const Post = props => { 
+    // console.log(props);
     const featImage = props.article[0].fields.featuredImage.fields.file.url;
     return(
         <>  
@@ -29,19 +29,19 @@ const Post = withRouter(props => {
             
         </>
     )
-});
+};
 
 Post.getInitialProps = async (context) => {
-    console.log(context);
-    const id = context.query.id;
+    // console.log(context);
+    const id = context.query.title;
+    console.log(id);
     const res = await client.getEntries({
-        'content_type': 'blogPost', 'sys.id': context.query.id, limit: 1
+        'content_type': 'blogPost', 'sys.id': id, limit: 1
     }).then(entries => {
-        console.log(entries);
+    //     console.log(entries);
         return entries.items;
     });
-    console.log(res);
     return { article: res };
 }
 
-export default Post;
+export default withRouter(Post);
