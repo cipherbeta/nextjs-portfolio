@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import {client} from '../utility/contentful';
-import BlogItem from '../components/blog/blogItem';
+import ProjectItem from '../components/blog/projectItem';
 import Head from 'next/head';
 
 const Projects = props => { 
@@ -12,7 +12,7 @@ const Projects = props => {
             </Head>
             <div className="bloglist">
             {props.projects.map((item, i) => {
-                return(<BlogItem data={item.fields} sys={item.sys} title={item.fields.title} key={i}/>)
+                return(<ProjectItem data={item.fields} sys={item.sys} title={item.fields.title} key={i}/>)
             })}
             </div>
             
