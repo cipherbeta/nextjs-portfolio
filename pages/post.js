@@ -32,11 +32,11 @@ const Post = props => {
 };
 
 Post.getInitialProps = async (context) => {
-    // console.log(context);
+    console.log(context);
     const id = context.query.title;
     console.log(id);
     const res = await client.getEntries({
-        'content_type': 'blogPost', 'sys.id': id, limit: 1
+        'content_type': 'blogPost', 'fields.slug': id, limit: 1
     }).then(entries => {
     //     console.log(entries);
         return entries.items;

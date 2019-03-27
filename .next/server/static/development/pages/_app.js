@@ -484,6 +484,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/free-brands-svg-icons */ "@fortawesome/free-brands-svg-icons");
 /* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "@fortawesome/free-solid-svg-icons");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__);
 var _jsxFileName = "/home/isaacdoud/Documents/webdev/next-js-portfolio/components/layout.js";
 
 
@@ -493,13 +495,14 @@ var _jsxFileName = "/home/isaacdoud/Documents/webdev/next-js-portfolio/component
 
 
 
-_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_5__["library"].add(_fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faTwitter"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faLinkedin"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faCodepen"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faGithub"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faGitlab"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faHtml5"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faCss3"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faJs"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faReact"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faSoundcloud"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faYoutube"]);
+
+_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_5__["library"].add(_fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faTwitter"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faLinkedin"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faCodepen"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faGithub"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faGitlab"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faHtml5"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faCss3"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faJs"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faReact"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faSoundcloud"], _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faYoutube"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faEnvelope"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faPhone"]);
 
 var Layout = function Layout(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 19
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -508,26 +511,26 @@ var Layout = function Layout(props) {
     key: "font-import",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 20
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 22
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }, props.children, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 25
     },
     __self: this
   })));
@@ -2362,6 +2365,17 @@ module.exports = require("@fortawesome/fontawesome-svg-core");
 /***/ (function(module, exports) {
 
 module.exports = require("@fortawesome/free-brands-svg-icons");
+
+/***/ }),
+
+/***/ "@fortawesome/free-solid-svg-icons":
+/*!****************************************************!*\
+  !*** external "@fortawesome/free-solid-svg-icons" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/free-solid-svg-icons");
 
 /***/ }),
 

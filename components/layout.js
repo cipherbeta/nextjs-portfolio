@@ -8,9 +8,11 @@ import Footer from './common/Footer';
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {faTwitter, faLinkedin, faCodepen, faGithub, faGitlab, 
     faHtml5, faCss3, faJs, faReact, faSoundcloud, faYoutube} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 
-library.add(faTwitter, faLinkedin, faCodepen, faGithub, faGitlab, faHtml5, faCss3, faJs, faReact, faSoundcloud, faYoutube);
+library.add(faTwitter, faLinkedin, faCodepen, faGithub, faGitlab, faHtml5, faCss3, faJs, faReact, faSoundcloud, faYoutube,
+    faEnvelope, faPhone);
 
 const Layout = props => (
     <>

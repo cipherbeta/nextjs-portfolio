@@ -6,7 +6,7 @@ const ProjectItem = props => {
     console.log(props);
     return(
         // <Link prefetch href={`/post/${url}`} as={`/p/${props.sys.id}`}>
-        <Link prefetch as={`/project/${url}`} href={`/project?title=${props.sys.id}`}>
+        <Link prefetch href={`/project?title=${props.data.slug}`}>
             <div className="blogItem">
                 <div className="blogItem--image" 
                 style={{backgroundImage: `url(https:${props.data.featuredImage.fields.file.url})`}}>

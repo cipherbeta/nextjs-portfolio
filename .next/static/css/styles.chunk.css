@@ -680,6 +680,18 @@ button {
   justify-content: center;
   align-items: center; }
 
+.contactPage--header {
+  min-height: calc(100vh - 4em);
+  width: 100%;
+  padding: 2em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center; }
+
 /* Make clicks pass-through */
 #nprogress {
   pointer-events: none; }

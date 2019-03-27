@@ -36,7 +36,7 @@ Project.getInitialProps = async (context) => {
     const id = context.query.title;
     console.log(id);
     const res = await client.getEntries({
-        'content_type': 'portfolioItem', 'sys.id': id, limit: 1
+        'content_type': 'portfolioItem', 'fields.slug': id, limit: 1
     }).then(entries => {
     //     console.log(entries);
         return entries.items;
