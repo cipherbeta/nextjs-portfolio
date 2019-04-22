@@ -16,17 +16,18 @@ const Project = props => {
         <>  
             <div className="bloglist">
             <div className="blogpost_header" style={{backgroundImage: `linear-gradient(rgba(14,14,14,1), rgba(14,14,14,.5), rgba(14,14,14,1)), url(${featImage})`}}>
-            <h1>{props.article[0].fields.title}</h1>
-            <h6>{dayjs(props.article[0].fields.published).fromNow().toUpperCase()}</h6>
+                <h1>{props.article[0].fields.title}</h1>
+                <a href={`https://${props.article[0].fields.links[0]}`} target="_blank">{props.article[0].fields.links[0]}</a>
+
+                <h6>{dayjs(props.article[0].fields.published).fromNow().toUpperCase()}</h6>
             </div>
             
             <div className="blogpost_wrapper">
-            {props.article 
-            ? <ReactMarkdown source={props.article[0].fields.content} escapeHtml={false}/>
-            : <div/>}
+                {props.article 
+                ? <ReactMarkdown source={props.article[0].fields.content} escapeHtml={false}/>
+                : <div/>}
+                </div>
             </div>
-            </div>
-            projectspage
         </>
     )
 };

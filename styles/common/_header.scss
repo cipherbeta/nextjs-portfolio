@@ -1,12 +1,15 @@
 // Make sure parent is set to relative positioning.
 %bracketeer {
-    &::after, &::before {
+
+    &::after,
+    &::before {
         display: inline-block;
         opacity: 0;
         -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
         -moz-transition: -moz-transform 0.3s, opacity 0.2s;
         transition: transform 0.3s, opacity 0.2s;
     }
+
     &::before {
         margin-right: 4px;
         content: '[';
@@ -15,6 +18,7 @@
         -moz-transform: translateX(20px);
         transform: translateX(20px);
     }
+
     &::after {
         margin-left: 4px;
         content: ']';
@@ -23,7 +27,11 @@
         -moz-transform: translateX(-20px);
         transform: translateX(-20px);
     }
-    &:focus::after, &:focus::before, &:hover::after, &:hover::before {
+
+    &:focus::after,
+    &:focus::before,
+    &:hover::after,
+    &:hover::before {
         opacity: 1;
         -webkit-transform: translateX(0px);
         -moz-transform: translateX(0px);
@@ -52,40 +60,61 @@
     box-sizing: border-box;
     background: $black;
     z-index: 9999;
+
     .wtexture {
         @extend %flavortext;
-        @media screen and (max-width: 950px){
+
+        @media screen and (max-width: 950px) {
             display: none;
         }
     }
+
     .social {
         display: none;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         flex-grow: 1;
-        @media screen and (max-width: 950px){
+
+        @media screen and (max-width: 444px) {
+            font-size: .8em;
+        }
+
+        @media screen and (max-width: 395px) {
+            font-size: .65em;
+        }
+
+        @media screen and (max-width: 950px) {
             display: flex;
         }
     }
+
     .links {
-        @media screen and (max-width: 950px){
+        @media screen and (max-width: 950px) {
             display: none;
         }
     }
+
     a {
         font-size: 1.25em;
         letter-spacing: .05em;
         text-transform: uppercase;
         margin-right: .75em;
-        &.right { margin-right: 0 };
+
+        &.right {
+            margin-right: 0
+        }
+
+        ;
         color: white;
         text-decoration: none;
         position: relative;
         transition: .1s ease-out all;
+
         &:focus {
             outline: none;
         }
+
         @extend %bracketeer;
     }
 }
@@ -104,15 +133,19 @@
     align-items: center;
     text-align: center;
     z-index: 9999;
-    @media screen and (max-width: 950px){
+
+    @media screen and (max-width: 950px) {
         bottom: calc(100vh - 4em);
+
         .header--wtexture {
             display: none;
         }
-        .header--bottom{
+
+        .header--bottom {
             display: none;
         }
     }
+
     &--wtexture {
         @extend %flavortext;
         font-size: 1em;
@@ -123,12 +156,14 @@
         transform-origin: top left;
         word-wrap: none;
     }
+
     &--bottom {
         margin-bottom: .5em;
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         a {
             padding: .5em;
             font-size: 1.25em;
@@ -136,13 +171,15 @@
             opacity: .5;
             transition: .1s ease-out all;
             position: relative;
+
             &:hover {
                 opacity: 1;
             }
+
             @extend %bracketeer;
         }
     }
-    
+
 }
 
 .logo {
@@ -154,14 +191,17 @@
     align-items: center;
     cursor: pointer;
     transition: .25s ease-out all;
+
     &:hover {
         .accent {
             color: $accent;
         }
     }
+
     .accent {
         transition: .25s ease-out all;
     }
+
     h1 {
         margin: 0;
         padding: 0;
@@ -169,7 +209,7 @@
 }
 
 .sandwich {
-    
+
     height: 4em;
     width: 4em;
     margin-right: -1em;
@@ -180,37 +220,44 @@
     opacity: .85;
     transition: .1s ease-out all;
     cursor: pointer;
-    @media screen and (max-width: 950px){
+
+    @media screen and (max-width: 950px) {
         display: flex;
     }
+
     &:hover {
         opacity: 1;
+
         .sandwich-slice {
-            &:nth-child(1){
+            &:nth-child(1) {
                 width: 2em;
                 margin-left: 0;
             }
-            &:nth-child(3){
+
+            &:nth-child(3) {
                 width: 2em;
                 margin-right: 0;
-            }   
+            }
         }
     }
+
     &.active {
         .sandwich-slice {
             margin: 0;
-            
-            &:nth-child(1){
+
+            &:nth-child(1) {
                 transform: rotate(45deg);
                 margin-bottom: -2px;
                 width: 2em;
                 margin-left: 0;
             }
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 transform: scale(0);
                 opacity: .25;
             }
-            &:nth-child(3){
+
+            &:nth-child(3) {
                 transform: rotate(-45deg);
                 margin-top: -2px;
                 width: 2em;
@@ -218,17 +265,20 @@
             }
         }
     }
+
     .sandwich-slice {
         background: white;
         width: 2em;
         height: 2px;
         margin: .25em;
         transition: .1s ease-out all;
-        &:nth-child(1){
+
+        &:nth-child(1) {
             width: 1em;
             margin-left: 1em;
         }
-        &:nth-child(3){
+
+        &:nth-child(3) {
             width: 1em;
             margin-right: 1em;
         }
@@ -237,7 +287,7 @@
 
 .offcanvasmenu {
     width: 100%;
-    background: rgba(14,14,14,.85);
+    background: rgba(14, 14, 14, .95);
     color: white;
     position: fixed;
     top: 0;
@@ -252,19 +302,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     &.active {
         top: 0;
     }
+
     small {
         text-transform: uppercase;
         letter-spacing: .05em;
     }
+
     a {
         color: white;
         font-size: 2em;

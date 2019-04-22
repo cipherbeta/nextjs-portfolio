@@ -11,12 +11,12 @@
 @import './common/_contact';
 @import './common/_nprogress';
 
-body { 
+body {
     font-family: $bodyFont;
     background: $black;
     color: white;
     font-display: swap;
-};
+}
 
 .accent {
     color: $accent;
@@ -36,23 +36,25 @@ body {
         align-self: stretch;
         padding: 2em;
         box-sizing: border-box;
-        background: rgba(0,0,0,.85);
+        background: rgba(0, 0, 0, .85);
         color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 50vh;
-        background-image: linear-gradient(rgba(14,14,14,1), rgba(14,14,14,.85), rgba(14,14,14,1)), url('/static/images/bg.webp');
+        background-image: linear-gradient(rgba(14, 14, 14, 1), rgba(14, 14, 14, .85), rgba(14, 14, 14, 1)), url('/static/images/bg.webp');
         background-size: cover;
         background-position: top center;
         position: relative;
         text-align: center;
         text-shadow: 0px 2px 4px black;
+
         small {
             margin: 0;
             padding: 0;
         }
+
         h1 {
             margin: 0;
             padding: 0;
@@ -66,6 +68,7 @@ body {
     justify-content: center;
     align-items: center;
     height: calc(50vh - 2em);
+
     &--section {
         flex-grow: 1;
         flex-basis: 0;
@@ -76,10 +79,12 @@ body {
         text-align: center;
         align-self: stretch;
         padding: 1em;
-        &:nth-child(2){
-            background: rgba(0,0,0, .05);
+
+        &:nth-child(2) {
+            background: rgba(0, 0, 0, .05);
         }
     }
+
     &--icon {
         height: 5.5em;
         width: 5.5em;
@@ -96,6 +101,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 6em;
+
     small {
         text-transform: uppercase;
         opacity: .1;
@@ -111,6 +117,7 @@ body {
     background-image: url('/static/images/404.webp');
     background-size: cover;
     background-position: top center;
+
     &--overlay {
         position: absolute;
         text-align: center;
@@ -120,22 +127,25 @@ body {
         right: 0;
         top: 0;
         bottom: 0;
-        background: linear-gradient(rgba(14,14,14,1), rgba(0,0,0,.85), rgba(14,14,14,1));
+        background: linear-gradient(rgba(14, 14, 14, 1), rgba(0, 0, 0, .85), rgba(14, 14, 14, 1));
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         h1 {
             font-size: 2em;
             margin: 0 0 .5rem;
             padding: 0;
         }
+
         h2 {
             font-size: 1em;
             font-weight: 300;
             margin: 0;
             padding: 0;
         }
+
         button {
             z-index: 9999;
         }

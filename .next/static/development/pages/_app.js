@@ -227,6 +227,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-pose */ "./node_modules/react-pose/dist/react-pose.es.js");
+var _jsxFileName = "/home/isaacdoud/Documents/webdev/next-js-portfolio/components/common/OffCanvasMenu.js";
 
 
 
@@ -234,17 +235,17 @@ var OffCanvasMenuWrapper = react_pose__WEBPACK_IMPORTED_MODULE_2__["default"].di
   enter: {
     opacity: 1,
     y: 0,
-    beforeChildren: true,
-    staggerChildren: 150,
-    delayChildren: 100
+    beforeChildren: false,
+    staggerChildren: 20,
+    delayChildren: 20
   },
   exit: {
     opacity: 0,
     y: 50,
     transition: {
-      duration: 50
+      duration: 30
     },
-    delayChildren: 50,
+    delayChildren: 20,
     beforeChildren: true
   }
 });
@@ -252,7 +253,7 @@ var OffCanvasMenuSection = react_pose__WEBPACK_IMPORTED_MODULE_2__["default"].di
   enter: {
     opacity: 1,
     y: 20,
-    staggerChildren: 50,
+    staggerChildren: 10,
     beforeChildren: true
   },
   exit: {
@@ -272,43 +273,126 @@ var OffCanvasMenuA = react_pose__WEBPACK_IMPORTED_MODULE_2__["default"].a({
 });
 
 var OffCanvasMenu = function OffCanvasMenu(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_pose__WEBPACK_IMPORTED_MODULE_2__["PoseGroup"], null, props.isActive && [react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuWrapper, {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_pose__WEBPACK_IMPORTED_MODULE_2__["PoseGroup"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, props.isActive && [react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuWrapper, {
     className: "offcanvasmenu",
-    key: "ofcmenu"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuSection, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    key: "ofcmenu",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuSection, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     style: {
       margin: 0,
       padding: 0
-    }
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
   }, "Isa Doud"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     style: {
-      marginBottom: '2em'
-    }
-  }, "Front End Developer // Creative")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuSection, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      marginBottom: "2em"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: this
+  }, "Front End Developer // Creative")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuSection, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     prefetch: true,
-    href: "/"
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuA, {
-    onClick: props.toggle
+    onClick: props.toggle,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
   }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     prefetch: true,
-    href: "/about"
+    href: "/about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuA, {
-    onClick: props.toggle
+    onClick: props.toggle,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
+    },
+    __self: this
   }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     prefetch: true,
-    href: "/blog"
+    href: "/blog",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuA, {
-    onClick: props.toggle
+    onClick: props.toggle,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
   }, "Blog")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     prefetch: true,
-    href: "/projects"
+    href: "/projects",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuA, {
-    onClick: props.toggle
+    onClick: props.toggle,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    },
+    __self: this
   }, "Projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     prefetch: true,
-    href: "/contact"
+    href: "/contact",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OffCanvasMenuA, {
-    onClick: props.toggle
+    onClick: props.toggle,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79
+    },
+    __self: this
   }, "Contact"))))]);
 };
 
@@ -31525,14 +31609,14 @@ var _jsxFileName = "/home/isaacdoud/Documents/webdev/next-js-portfolio/pages/_ap
 
 
 
-next_router__WEBPACK_IMPORTED_MODULE_12___default.a.events.on('routeChangeStart', function (url) {
+next_router__WEBPACK_IMPORTED_MODULE_12___default.a.events.on("routeChangeStart", function (url) {
   console.log("Loading: ".concat(url));
   nprogress__WEBPACK_IMPORTED_MODULE_11___default.a.start();
 });
-next_router__WEBPACK_IMPORTED_MODULE_12___default.a.events.on('routeChangeComplete', function () {
+next_router__WEBPACK_IMPORTED_MODULE_12___default.a.events.on("routeChangeComplete", function () {
   return nprogress__WEBPACK_IMPORTED_MODULE_11___default.a.done();
 });
-next_router__WEBPACK_IMPORTED_MODULE_12___default.a.events.on('routeChangeError', function () {
+next_router__WEBPACK_IMPORTED_MODULE_12___default.a.events.on("routeChangeError", function () {
   return nprogress__WEBPACK_IMPORTED_MODULE_11___default.a.done();
 });
 
@@ -31556,13 +31640,13 @@ function (_App) {
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_9__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 31
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 32
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_page_transitions__WEBPACK_IMPORTED_MODULE_14__["PageTransition"], {
@@ -31570,13 +31654,13 @@ function (_App) {
         classNames: "page-transition",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 33
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 34
         },
         __self: this
       })))));

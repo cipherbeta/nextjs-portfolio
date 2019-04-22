@@ -1,11 +1,12 @@
 .recentpostssidebar {
-    position: fixed; 
+    position: fixed;
     right: 0;
     top: 0;
     bottom: 0;
     width: 16em;
     background: $black;
     color: white;
+
     &.active {
         width: calc(100% - 4em);
     }

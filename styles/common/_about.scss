@@ -1,7 +1,48 @@
+.about_profilepic {
+    object-fit: cover;
+
+    img {
+        border-radius: 100%;
+        width: 300px;
+        height: auto;
+    }
+}
+
 .about_wrapper {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 18px;
+
+    p {
+        text-indent: 2em;
+    }
+
+    @media screen and (max-width: 820px) {
+        flex-direction: column;
+    }
+}
+
+.about_left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2em;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.about_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    flex-grow: 2;
+    flex-basis: 0;
+
+
 }
